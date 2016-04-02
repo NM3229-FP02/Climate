@@ -1,0 +1,26 @@
+body {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+h1, h2{
+  font-family: 'Libre Baskerville', Times, sans-serif;
+  font-weight: 700;
+}
+
+.slide {
+  height: 100vh;
+  overflow-y: hidden;
+  padding: 60px 0;
+}
+
+.slide-1 {
+  padding-top: 25%;
+  background-color: #333;
+  color: #DDD;
+}
+
+.title {
+  color: #FFF;
+}
