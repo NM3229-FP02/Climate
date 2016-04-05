@@ -24,3 +24,53 @@ h1, h2{
 .title {
   color: #FFF;
 }
+
+/* Ranking graph */
+.rank-container {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.rank-container
+.rank-country-container {
+  background-color: #eee;
+  background-size: 50%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 12px;
+  position: relative;
+  z-index: 0;
+}
+
+.rank-container
+.rank-country-container
+.rank-country-bg {
+  background-color: #aaa;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.rank-container
+.rank-country-container
+.rank-country-number {
+  display: inline-block;
+  padding-right: 10px;
+  z-index: 1;
+}
+
+.rank-container
+.rank-country-container
+.rank-country-name {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.rank-container
+.rank-country-container
+.rank-country-quantity {
+  display: inline-block;
+  float: right;
+}
