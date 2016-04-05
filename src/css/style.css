@@ -43,6 +43,13 @@ h1, h2{
 }
 
 .rank-container
+.rank-country-container.active
+.rank-country-bg {
+  background-color: #800000;
+  color: #fff;
+}
+
+.rank-container
 .rank-country-container
 .rank-country-bg {
   background-color: #aaa;
