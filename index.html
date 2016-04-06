@@ -20,27 +20,57 @@
   </head>
   <body>
 
-  	<section class="slide slide-1">
+  	<section class="slide slide-1" id="slide-1">
   		<div class="container">
   			<h1 class="title">Climate change and its hidden culprits</h1>
   			<h3>Certainly the earth is warming, but what and who are to blame?</h3>
   			<br />
   			<p class="caption">A deep-dive into the world's climate change producers by Scott, Mei Lan, Jenny, and Lester for NM3229.</p>
-  		</div>
+        <div class="text-center nav-link-container">
+          <a data-scroll href="#slide-2" class="nav-link">
+            First, what is warming the earth?
+            <br /><br />
+            <span class="glyphicon glyphicon-menu-down"></span>
+          </a>
+        </div>
+      </div>
   	</section>
 
-  	<section class="slide">
+  	<section class="slide" id="slide-2">
   		<div class="container">
-  			<h1>What is warming the Earth?</h1>
-  			<h3><p>A look at factors causing global warming.</p></h3>
+  			<h2>Warming trends correlate with production of emissions</h2>
+  			<p>
+          Typically, climate change is attributed to fluctuations in volcanic
+           activity, sun activity, and greenhouse gases. However, when each of the
+           trends are plotted against world temperature change over the years, the
+           only factor that correlates with temperature change is greenhouse gas production.
+        </p>
+        <br />
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#volcano" aria-controls="volcano" role="tab" data-toggle="tab">Volcanic activity</a></li>
+          <li role="presentation"><a href="#sunspots" aria-controls="sunspots" role="tab" data-toggle="tab">Sunspots</a></li>
+          <li role="presentation"><a href="#ghg" aria-controls="ghg" role="tab" data-toggle="tab">Greenhouse gas emissions</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="volcano">
+            <script type='text/javascript' src='https://10ay.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1200px; height: 836px;'><object class='tableauViz' width='1200' height='836' style='display:none;'><param name='host_url' value='https%3A%2F%2F10ay.online.tableau.com%2F' /> <param name='site_root' value='&#47;t&#47;climatechange' /><param name='name' value='Tempagainstfactors&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showShareOptions' value='false' /></object></div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="sunspots">...</div>
+          <div role="tabpanel" class="tab-pane" id="ghg">...</div>
+        </div>
+
+        <p>
   			<!-- Insert interactive graphs here -->
   			<div class="row">
   				<div class="span4"></div>
   				<div class="span4">
 
-  			<script type='text/javascript' src='https://10ay.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1200px; height: 836px;'><object class='tableauViz' width='1200' height='836' style='display:none;'><param name='host_url' value='https%3A%2F%2F10ay.online.tableau.com%2F' /> <param name='site_root' value='&#47;t&#47;climatechange' /><param name='name' value='Tempagainstfactors&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='showShareOptions' value='false' /></object></div>
 
-  			</div>
+  		</div>
   				<div class="span4"></div>
   			</div>
   		</div>
@@ -50,8 +80,15 @@
 
   	<section class="slide">
   		<div class="container">
-  			<h2>Who is producing the most CO2 emissions?</h2>
-  			<h3><p>Carbon dioxide emission by country, 2014</p></h3>
+  			<h2>China and USA producing disproportionate amount of emissions</h2>
+  			<h3>Carbon dioxide emission by country, 2014</h3>
+        <p>
+          Since the production of greenhouse gases seems to be the main cause
+          of climate change, a worldview of the world's carbon dioxide producers
+          identifies the which countries are producing the most emissions. Based
+          on 2014 data, China and the United States are the world's leaders in
+          carbon dioxide production, with India trailing in third place.
+        </p>
   			<!-- CO2 emission map -->
 
   			<div class="row">
@@ -67,9 +104,15 @@
 
   	<section class="slide">
   		<div class="container">
-  			<h2>So who are the victims of climate change?</h2>
+  			<h2>Tajikistan and Afghanistan experience the greatest temperature change</h2>
   			<!-- Which countries are the most affected by temperature change/sea levels -->
-  			<h3><p>Projected temperature increase </p></h3>
+  			<h3><p>Projected temperature increases in &deg;C, 2011</p></h3>
+        <p>
+          A worldview of projected temperature increases for each country shows that
+          every country has a positive projected temperature change. In particular,
+          the countries that are most vulnerable to temperature change are Tajikistan,
+          Afghanistan, and Russia, and clustered together in Eurasia and the Middle East.
+        </p>
   			<!--Temperature -->
   			<div class="container">
   				<div class="row">
@@ -87,7 +130,20 @@
   		<section class="slide">
   			<div class="container">
   				<h2>Climate change not the most drastic in places where carbon is produced</h2>
-  				<div class="row">
+          <p>
+            The previous two sections suggest that the countries at the root of climate change
+            are not the ones most affected by it. Due to geography, and the variance of climates
+            across the world, it can be easy for countries to produce emissions while not experiencing
+            the full magnitude of their effects.
+          </p>
+          <p>
+            Ranking the top carbon emissions producers against the countries experiencing the most
+            climate change, it is apparent that most top emissions producers are not countries that
+            experience the most extreme climate changes. The only countries that are in the top 10
+            rankings of both criteria are Canada and Russia.
+          </p>
+          <br />
+          <div class="row">
 
   					<div class="col-md-5">
   						<h4>Carbon emissions worldwide by ranking</h4>
@@ -694,6 +750,11 @@
   			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   			<!-- Include all compiled plugins (below), or include individual files as needed -->
   			<script src="src/js/bootstrap.js"></script>
+        <script src="src/js/smooth-scroll.min.js"></script>
   			<script src="src/js/main.js"></script>
+
+        <script>
+          smoothScroll.init();
+        </script>
   		</body>
   		</html>
