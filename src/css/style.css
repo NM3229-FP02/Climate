@@ -1,7 +1,7 @@
 body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 100;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h1, h2{
@@ -9,16 +9,44 @@ h1, h2{
   font-weight: 700;
 }
 
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff3333;
+}
+
 .slide {
-  height: 100vh;
+  /*height: 100vh;*/
   overflow-y: hidden;
-  padding: 60px 0;
+  padding: 50px 0;
+  position: relative;
 }
 
 .slide-1 {
+  height: 100vh;
   padding-top: 25%;
   background-color: #333;
   color: #DDD;
+}
+
+.slide-1 .nav-link-container {
+  position: absolute;
+  bottom: 60px;
+}
+
+.slide-1 .nav-link-container a {
+  color: #FFF;
 }
 
 .title {
@@ -26,25 +54,25 @@ h1, h2{
 }
 
 .nav-link-container {
-  position: absolute;
-  bottom: 60px;
+  color: #333;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  font-weight: 400;
 }
 
 a.nav-link {
-  color: #FFF;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
+  color: #333;
 }
 
 /* Ranking graph */
 .rank-container {
   overflow-y: scroll;
-  height: 400px;
+  height: 500px;
 }
 
 .rank-container
@@ -59,9 +87,29 @@ a.nav-link {
 }
 
 .rank-container
+.rank-country-container:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.rank-container
+.rank-country-container.active,
+.rank-country-container.active-toggle {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+}
+
+.rank-container
 .rank-country-container.active
 .rank-country-bg {
-  background-color: #800000;
+  background-color: #ff3333;
+  color: #fff;
+}
+
+.rank-container
+.rank-country-container.active-toggle
+.rank-country-bg {
+  background-color: #ff3333;
   color: #fff;
 }
 
