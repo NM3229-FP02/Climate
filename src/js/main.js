@@ -9,7 +9,7 @@ $('.rank-country-container').on('click', function(){
 
   if ($(this).hasClass('active')) {
     $(this).removeClass('active');
-    $(toggleSubject + ' .rank-country-container').show();
+    $(toggleSubject + ' .rank-country-container').show().removeClass('active-toggle');
   } else {
     $('.rank-country-container').removeClass('active').removeClass('active-toggle');
     $(selfSubject + ' .rank-country-container').show();
