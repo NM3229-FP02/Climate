@@ -26,10 +26,14 @@ a:hover {
   color: #ff3333;
 }
 
+a.nav-link:hover {
+  color: #ff3333;
+}
+
 .slide {
   /*height: 100vh;*/
   overflow-y: hidden;
-  padding: 50px 0;
+  padding: 30px 0;
   position: relative;
 }
 
@@ -47,6 +51,10 @@ a:hover {
 
 .slide-1 .nav-link-container a {
   color: #FFF;
+}
+
+.slide-2 {
+  padding-top: 50px;
 }
 
 .title {
